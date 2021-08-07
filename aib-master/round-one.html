@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/round-one.css">
+    <title>AIB | Acumen</title>
+    <style>
+        div {
+            background-image: url('./graphics/Image1.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li style="float: left;">
+                <a href="instructions.html">Instructions</a>
+            </li>
+            <li style="float:right;">
+                <button id="myBtn" class="button button1">Contact Us</button>
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <br>
+                        <p>
+                            <p style="text-align: center; font-size: xx-large; color:  #a3044a;">Contact us</p>
+                        </p>
+                        <br>
+                        <p style="text-align: center; color: #1cdbc2;">Shaurya : <a>+91 87573 73564</a></p>
+                        <p style="text-align: center; color: #1cdbc2;">Anupriya : <a>+91 95701 64884</a></p>
+                        <p style="text-align: center; color: #1cdbc2;">Pranav : <a>+91 97030 03291</a></p>
+                        <p style="text-align: center; color: #1cdbc2;">Sparsh : <a>+91 94331 80822</a></p>
+                    </div>
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function() {
+                            modal.style.display = "block";
+                        }
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="headings">
+        <p class="acumen">Acumen</p>
+        <p class="presents">presents</p>
+        <p class="aib">
+            <a href="index.html">AIB</a></p>
+        <br>
+        <p class=" round-one ">Round 1</p>
+        <br>
+        <br>
+    </div>
+
+    <div id="info " style="display: block; ">
+        <div style="width: 100%; height: 800px;">
+            <p style="align-items: center; text-align: center; padding-top: 10%; font-size: xx-large;">Round 1 starts at 1pm on 5th November.</p>
+        </div>
+    </div>
+    <div id="frames " class="iframes " style="align-items: center; display: none; ">
+        <iframe id="frame1 " style="display: none; " src="https://test.gclocked.com/?form=-ML4U36S-mLXUNsrOZD8" width="100% " height="800 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe>
+        <iframe id="frame2 " style="display: none; " src="https://test.gclocked.com/?form=-ML7gTpemLOq_F82kAYw" width="100% " height="800 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe>
+        <iframe id="frame3 " style="display: none; " src="https://test.gclocked.com/?form=-ML7gSrSucVab-nRmquK" width="100% " height="800 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe>
+        <iframe id="frame4 " style="display: none; " src="https://test.gclocked.com/?form=-ML7h155ZuQQ1vo0fcJI" width="100% " height="800 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe>
+
+        <script>
+            var d = new Date(); // for now
+            // var d = new Date("2020-11-01T20:30:51.01 ");
+            var currentDay = d.getDate();
+            //console.log(currentDay);
+            if (currentDay == 5 || currentDay == 6) {
+                var currentHour = d.getHours();
+                //console.log(currentHour);
+                if (currentHour == 13) {
+                    console.log("in 13 ");
+                    var x = document.getElementById("info ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frames ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame1 ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame2 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame3 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame4 ");
+                    x.style.display = "none ";
+                } else if (currentHour == 14) {
+                    var x = document.getElementById("info ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frames ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame1 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame2 ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame3 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame4 ");
+                    x.style.display = "none ";
+                } else if (currentHour == 15) {
+                    console.log("in 15 ");
+                    var x = document.getElementById("info ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frames ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame1 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame2 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame3 ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame4 ");
+                    x.style.display = "none ";
+                } else if (currentHour == 16) {
+                    var x = document.getElementById("info ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frames ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame1 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame2 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame3 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame4 ");
+                    x.style.display = "block ";
+                } else if (currentHour == 17) {
+                    var x = document.getElementById("info ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frames ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame1 ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame2 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame3 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame4 ");
+                    x.style.display = "none ";
+                } else if (currentHour == 18) {
+                    var x = document.getElementById("info ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frames ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame1 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame2 ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame3 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame4 ");
+                    x.style.display = "none ";
+                } else if (currentHour == 19) {
+                    var x = document.getElementById("info ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frames ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame1 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame2 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame3 ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frame4 ");
+                    x.style.display = "none ";
+                } else {
+                    var x = document.getElementById("info ");
+                    x.style.display = "block ";
+                    x = document.getElementById("frames ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame1 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame2 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame3 ");
+                    x.style.display = "none ";
+                    x = document.getElementById("frame4 ");
+                    x.style.display = "none ";
+                }
+            } else {
+                var x = document.getElementById("info ");
+                x.style.display = "block ";
+                x = document.getElementById("frames ");
+                x.style.display = "none ";
+                x = document.getElementById("frame1 ");
+                x.style.display = "none ";
+                x = document.getElementById("frame2 ");
+                x.style.display = "none ";
+                x = document.getElementById("frame3 ");
+                x.style.display = "none ";
+                x = document.getElementById("frame4 ");
+                x.style.display = "none ";
+            }
+        </script>
+    </div>
+    <footer>
+        <div class="footer ">
+            <p>
+                AIB - Acumen @ TechTatva 2020, MIT Manipal.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

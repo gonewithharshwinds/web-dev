@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <link href="css/leaderboard.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>AIB | Leaderboard</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li style="float:right;">
+                <button id="myBtn" class="button button1">Contact Us</button>
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <br>
+                        <p>
+                            <p style="text-align: center; font-size: xx-large; color:  #a3044a;">Contact us</p>
+                        </p>
+                        <br>
+                        <p style="text-align: center; color: #1cdbc2;">Shaurya : <a>+91 87573 73564</a></p>
+                        <p style="text-align: center; color: #1cdbc2;">Anupriya : <a>+91 95701 64884</a></p>
+                        <p style="text-align: center; color: #1cdbc2;">Pranav : <a>+91 97030 03291</a></p>
+                        <p style="text-align: center; color: #1cdbc2;">Sparsh : <a>+91 94331 80822</a></p>
+                    </div>
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function() {
+                            modal.style.display = "block";
+                        }
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="headings">
+        <p class="acumen">Acumen</p>
+        <p class="presents">presents</p>
+        <p class="aib" href="index.html">AIB</p>
+        <br>
+        <br>
+        <br>
+        <p class="data">Welcome to Leaderboards page Mr. Crewmate! We are yet to begin with our mission.</p>
+        <p class="data">The leaderboard will be updated here everynight on </p>
+        <p class="data">5th November, 2020 (round 1 day 1)</p>
+        <p class="data">6th November, 2020 (round 1 day 2)</p>
+        <p class="data">7th November, 2020 (round 2 finals)</p>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="excel-container">
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>
+                AIB - Acumen @ TechTatva 2020, MIT Manipal.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

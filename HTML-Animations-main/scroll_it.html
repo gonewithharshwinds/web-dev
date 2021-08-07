@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+        html {
+            background: rgb(65, 65, 65);
+            overflow-y: auto;
+        }
+        
+        body {
+            min-height: 150vh;
+            font-family: monospace;
+            line-height: 1.5;
+            font-size: 3vmin;
+            @media (min-min-width: 600px) {
+                font-size: 18px;
+            }
+        }
+        
+        p {
+            max-width: 25em;
+            margin: 2em auto;
+            padding: 0 1em;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        h2 {
+            max-width: 25em;
+            margin: 2em auto;
+            padding: 0 1em;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        strong {
+            display: block;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">AquaDeVil</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+        <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+        
+        <text y="40" font-size="32">
+        <textPath id="text-path" href="#text-curve" startOffset="200">
+        <a href="https://www.gonewithharshwinds.com">AquaDeVil</a>
+        </textPath>
+        </text>
+        </svg>
+
+    <p>
+        Vestibulum nunc massa, gravida quis porta nec, feugiat id metus. Nunc ac arcu dolor, quis vestibulum leo. Cras viverra mollis ipsum, non rhoncus lectus aliquam et. Morbi faucibus purus sit amet lacus aliquet elementum. Donec sit amet posuere enim. Cras
+        in eros id tortor fringilla ultricies. Mauris faucibus ullamcorper velit, pulvinar varius odio eleifend eu. Quisque id odio metus. Morbi adipiscing ultricies posuere. Pellentesque elementum porttitor eros in molestie. Maecenas ut leo quis nisi
+        tempor tincidunt.
+    </p>
+    <script>
+        console.clear();
+
+        var textPath = document.querySelector('#text-path');
+
+        var textContainer = document.querySelector('#text-container');
+
+        var path = document.querySelector(textPath.getAttribute('href'));
+
+        var pathLength = path.getTotalLength();
+        console.log(pathLength);
+
+        function updateTextPathOffset(offset) {
+            textPath.setAttribute('startOffset', offset);
+        }
+
+        updateTextPathOffset(pathLength);
+
+        function onScroll() {
+            requestAnimationFrame(function() {
+                var rect = textContainer.getBoundingClientRect();
+                var scrollPercent = rect.y / window.innerHeight;
+                console.log(scrollPercent);
+                updateTextPathOffset(scrollPercent * 2 * pathLength);
+            });
+        }
+
+        window.addEventListener('scroll', onScroll);
+    </script>
+</body>
+
+</html>
