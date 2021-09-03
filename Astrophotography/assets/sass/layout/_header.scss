@@ -1,0 +1,16 @@
+/*
+The Astronomy Club Manipal Official Website
+Created by Harsh Mehta (2021-22 Board @ The Astronomy Club Manipal)
+The Astronomy Club Manipal - Astrophotography Sub Page
+*/
+
+/* Header */
+
+	#header {
+		@include padding(3em, 2.25em);
+
+		h1 {
+			font-size: 2.25em;
+			font-weight: _font(weight-bold);
+		}
+	}
